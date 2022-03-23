@@ -20,6 +20,9 @@ app.use('/users', userRouter);
 app.use('/sections', sectionRouter);
 app.use('/collections', collectionRouter);
 app.use('/payment', paymentRouter);
+app.get('/', (req, res) => {
+    res.send('Welcome to E-shop API')
+});
 
 //DB
 
